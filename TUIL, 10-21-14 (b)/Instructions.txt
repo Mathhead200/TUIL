@@ -1,0 +1,58 @@
+-- Allocate a new screen buffer: (var, rows, cols)
+AllocScreenBuffer  <id> <num> <num>
+
+-- Calculate a given expression: (var, expr)
+Calc  <var>, <expr>
+
+-- Deallocate a given variable: (var)
+Dealloc <id>
+
+
+
+-- Sets the title of the display: (title)
+SetTitle  <str>
+
+-- Sets a screen buffer as the current one displayed on screen: (screen_buffer)
+Show  <id>
+
+-- Sets the background color of a given screen buffer or the current screen: ([screen_buffer], color)
+SetBackground  <id> <color>
+SetBackground       <color>
+
+-- Sets the text color of a given screen buffer or of the current screen: ([screen_buffer], color)
+SetColor  <id> <color>
+SetColor       <color>
+
+-- Sets the highlighting color of a given screen buffer or the current screen: ([screen_buffer], color)
+SetHighlight  <id> <color>
+SetHighlight       <color>
+
+-- Moves the text caret of a given screen buffer or the current screen to a given position: ([screen_buffer], row, col)
+MoveCaret  <id> <num> <num>
+MoveCaret       <num> <num>
+
+
+
+-- Displays (writes) a given string, at a given position or current caret position, and to a given screen buffer or the current screen: ([screen_buffer], text, row, col)
+Disp  <id> <str> <num> <num>
+Disp  <id> <str>
+Disp       <str> <num> <num>
+Disp       <str>
+
+
+
+-- Gets the key code of the last key pressed: (var)
+GetKey  <id>
+
+-- Gets the position and button code of the last mouse click: (var_x, var_y, var_button)
+GetClick  <id>, <id>, <id>
+
+-- Gets the current position of the mouse: (var_x, var_y)
+GetMouse  <id>, <id>
+
+
+
+-- Stop the current program
+Exit
+
+

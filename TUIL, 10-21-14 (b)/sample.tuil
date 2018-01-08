@@ -1,0 +1,17 @@
+# sample TUIL file
+
+AllocScreenBuffer buf 12 12;
+Show buf;
+
+
+# display "Hello, world!"
+Disp "Hello, world!";
+
+
+# allocate array[0] = -9, array[1] = -7, ..., array[9] = +9
+AllocNumber index 0;
+While (index < 10) {
+	AllocNumber array[index] ((2 * index) - 9);
+	Calc index (index + 1);
+}
+
